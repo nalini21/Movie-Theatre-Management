@@ -1,1 +1,1 @@
-# Movie-Theatre-Management-in-C-
+# Movie-Theatre-Management-in-C++
