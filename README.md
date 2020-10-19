@@ -1,18 +1,16 @@
 # Movie-Theatre-Management-in-C++
 <h2>Movie Ticket Reservation Application</h2>
 
-We all have booked movie tickets using numerous ticket booking apps/websites
-available today. This question requires developers to build an application which
-achieves this functionality.
+We all have booked movie tickets using numerous ticket booking apps/websites available today. This question requires developers to build an application which achieves this functionality.
 
 <h3>1. Add a screen</h3>
-Ability to register a screen
-a. screen name
-b. number of rows
-c. total seats per row
-d. list of aisle seats for each row
-
-screen name is primary identifier.
+Ability to register a screen. where screen name is primary identifier.
+<ui>
+  <li>screen name</li>
+  <li>number of rows</li>
+  <li>total seats per row</li>
+  <li>list of aisle seats for each row</li>
+</ui>
 
 Format for command for adding a screen:
 <h4>add-screen &ltscreen-name&gt &ltnumber-of-rows&gt &lttotal-seats-per-row&gt &ltspace seperated list of aisle seats&gt</h4>
@@ -28,7 +26,7 @@ failure -> if the result fails
 Ability to reserve seats in a screen if they are available
 
 Fomat for command for reserving seats:
-<h4>reserve-seat <screen-name> <row-number> <space seperated list of seats to be reserved></h4>
+<h4>reserve-seat &ltscreen-name&gt &lrow-number&gt &lspace seperated list of seats to be reserved&gt</h4>
 
 eg:
 reserve-seat Screen1 4 5 6 7
@@ -41,7 +39,7 @@ failure -> if the request fails
 Ability to fetch unreserved seats for a row in a given screen
 
 Format for command for getting unreserved seats:
-<h4>get-unreserved-seats <screen-name> <row-number></h4>
+<h4>get-unreserved-seats &ltscreen-name&gt &ltrow-number&gt</h4>
 
 eg:
 get-unreserved-seats Screen1 4
@@ -53,7 +51,7 @@ Response format:
 This command suggest contiguous seat numbers based on user's preference. This functionality should take into account aisle seats as well since that will decide if contiguous seats are possible for the user's choice. If no contiguous comination is possible, the response should specify that it is not feasible to fulfil the request. This functionality should also take into account reserved seats based on functionality 2
 
 Format for the command to get seat suggestion:
-<h4>suggest-contiguous-seats <screen-name> <number of seats> <row-number> <choice-of-seat-number></h4>
+<h4>suggest-contiguous-seats &ltscreen-name&gt &ltnumber of seats&gt &ltrow-number&gt &ltchoice-of-seat-number&gt</h4>
 
 eg:
 suggest-contiguous-seats Screen1 3 3 4
