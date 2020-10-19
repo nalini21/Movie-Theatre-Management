@@ -68,26 +68,26 @@ none
 
 
 
-//sample input
-9
-add-screen Screen1 12 10 4 5 8 9
-add-screen Screen2 20 25 3 4 12 13 17 18
-reserve-seat Screen1 4 5 6 7
-reserve-seat Screen2 13 6 7 8 9 10
-reserve-seat Screen2 13 4 5 6
-get-unreserved-seats Screen2 13
-suggest-contiguous-seats Screen1 3 3 4
-suggest-contiguous-seats Screen2 4 12 4
-suggest-contiguous-seats Screen2 4 10 3
+//<h4>sample input</h4>
+<p>9</p>
+<p>add-screen Screen1 12 10 4 5 8 9</br>
+add-screen Screen2 20 25 3 4 12 13 17 18</br>
+reserve-seat Screen1 4 5 6 7</br>
+reserve-seat Screen2 13 6 7 8 9 10</br>
+reserve-seat Screen2 13 4 5 6</br>
+get-unreserved-seats Screen2 13</br>
+suggest-contiguous-seats Screen1 3 3 4</br>
+suggest-contiguous-seats Screen2 4 12 4</br>
+suggest-contiguous-seats Screen2 4 10 3>/p>
 
-//corresponding output
-success
-success
-success
-success
-failure
-1 2 3 4 5 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25
-2 3 4
-4 5 6 7
-none
+//<h4>corresponding output</h4>
+<p>success</br>
+success</br>
+success</br>
+success</br>
+failure</br>
+1 2 3 4 5 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25</br>
+2 3 4</br>
+4 5 6 7</br>
+none</p>
 
